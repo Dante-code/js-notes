@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    
+    var str = 'abc';
+    var num = 123;
+    var a = null;
+    var b;  // 默认值是undefined
+ 
+    console.log(Boolean(str));   // true
+    console.log(Boolean(num));   // true
+    console.log(Boolean(a));     // false
+    console.log(Boolean(b));     // false
+
+    // 转换成false的情况：null  undefined  ''空字符串  0 NaN
+    
+    console.log(Boolean(''));
+    console.log(Boolean(0));
+    console.log(Boolean(NaN));
+
+    console.log(Boolean(-1));
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
