@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="main.js"></script>
+  <script>
+    getSum();
+    // // 求1-100之间所有数的和
+    // var sum = 0;
+    // for (var i = 200; i <= 300; i++) {
+    //   sum += i;
+    // }
+    // console.log(sum);
+    // 本金10000元存入银行，年利率是千分之三，每过1年，将本金和利息相加作为新的本金。计算5年后，获得的本金是多少？
+    // 本金
+    // var money = 10000;
+    // // 利率
+    // var rate = 0.003;
+
+    // // money = money + money * rate;
+    // for (var i = 0; i < 5; i++) {
+    //   money += money * rate;
+    // }
+    // console.log(money);
+    
+
+    // 有个人想知道，一年之内一对兔子能繁殖多少对？于是就筑了一道围墙把一对兔子关在里面。已知一对兔子每个月可以生一对小兔子，而一对兔子从出生后第3个月起每月生一对小兔子。假如一年内没有发生死亡现象，那么，一对兔子一年内（12个月）能繁殖成多少对？
+    // （兔子的规律为数列，1，1，2，3，5，8，13，21）
+    
+    // 前两个数
+    var n1 = 1;
+    // 前一个数
+    var n2 = 1;
+    // 当前数
+    var n3;
+    for (var i = 3; i <= 9; i++) {
+      n3 = n2 + n1;
+      n1 = n2;
+      n2 = n3;
+    }
+    console.log(n3);
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

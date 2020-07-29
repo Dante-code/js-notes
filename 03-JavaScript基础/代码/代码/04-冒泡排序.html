@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 冒泡排序    -- 从小到大的排序
+    var numbers = [1, 2, 3, 4, 5];
+    var count = 0; // 记录循环的次数
+    // 外层循环：控制趟数，每一趟找到一个最大值
+    for (var i = 0; i < numbers.length - 1; i++) {
+      count++;
+      // 内层循环：控制比较的次数，并且判断两个数的大小，把大的数往后移动，小的数往前移动
+      for (var j = 0; j < numbers.length - 1 - i; j++) {
+        count++;
+        // 两两比较     从小到大排序 
+        if (numbers[j] > numbers[j + 1]) {
+          // 交换位置
+          var tmp = numbers[j];
+          numbers[j] = numbers[j + 1];
+          numbers[j + 1] = tmp;
+        }
+      }
+    }
+    console.log(numbers);
+    console.log(count);
+    
+    // 
+    // 
+    // 优化刚刚的代码
+    var numbers = [1, 2, 3, 4, 5];
+    var count = 0; // 记录循环的次数
+    // 外层循环：控制趟数，每一趟找到一个最大值
+    for (var i = 0; i < numbers.length - 1; i++) {
+      // 假设数据排好顺序了
+      var isSort = true;
+      count++;
+      // 内层循环：控制比较的次数，并且判断两个数的大小，把大的数往后移动，小的数往前移动
+      for (var j = 0; j < numbers.length - 1 - i; j++) {
+        count++;
+        // 两两比较     从小到大排序 
+        if (numbers[j] > numbers[j + 1]) {
+          // 没有排好 
+          isSort = false;
+          // 交换位置
+          var tmp = numbers[j];
+          numbers[j] = numbers[j + 1];
+          numbers[j + 1] = tmp;
+        }
+      }
+      // 某一趟结束，判断一下排序是否结束
+      // 如何判断排序是否排好，根据是否发生了数据交换，如果发生了数据交换说明没有排好
+      if (isSort) {
+        // 如果排好顺序
+        break;
+      }
+    }
+    console.log(numbers);
+    console.log(count);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

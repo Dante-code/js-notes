@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // // 数组 是一种数据类型
+    // // Number String
+    // var n1 = 6;
+    // var name = 'zs';
+
+    // // 数组 可以存储很多项，有顺序，很多项形成一个集合，这个集合就是数组 Array
+    // // 数组的字面量 [] 
+    // var names = ['zs', 'ls', 'ww', 'zl'];
+
+    // // 如何获取数组中的数据
+    // // 索引/下标  数组中的第一项的索引是从0开始
+    // console.log(names[0]);
+    // console.log(names[1]);
+    // // 获取数组中最后一项的值
+    // console.log(names[3]);
+    // // undefined
+    // console.log(names[4]);
+    // 
+    // 
+    // 数组中存储的数据类型可以不一致
+    // 但是不推荐这么用
+    // var names = ['zs', 'ls', 18, 19, true];
+    // console.log(names);
+    // 
+    // 数组的长度: 数组中元素的个数
+    // var names = ['zs', 'ls', 'ww', 'zl', '', 'abc', '123'];
+    // // 获取数组的长度
+    // // console.log(names.length);
+    // // 
+    // // console.log(names[0]);
+    // // 获取数组中的最后一个元素
+    // // 如果数组中有29项，最后一项的索引是多少？  数组的长度 - 1
+    // console.log(names.length);
+    // console.log(names[names.length - 1]);
+    
+
+    // 数组 的长度 可以动态改变
+     // var names = ['zs', 'ls', 'ww', 'zl'];
+     // // 如何修改数组中的元素
+     // // names[0] = 'xxx';
+     // // console.log(names);
+     // // 
+     // // 给数组增加一项
+     // // names[4] = 'abc';
+     // names[6] = 'xxx';
+     // console.log(names);
+     // console.log(names.length);
+
+
+     // 获取数组中的每一项，并打印（遍历数组）
+    // var names = ['zs', 'ls', 'ww', 'zl'];
+    // for (var i = 0; i < names.length; i++) {
+    //   console.log(names[i]);
+    // }
+
+    // 遍历数组  先打印最后一项    长度 - 1    长度 - 2
+    // var names = ['zs', 'ls', 'ww', 'zl'];
+    // for (var i = names.length - 1; i >= 0; i--) {
+    //   console.log(names[i]);
+    // }
+    // 
+    // 
+    // 补充 
+    var scores = [];  // 空数组
+    console.log(scores.length);
+    for (var i = 0; i < 10; i++) {
+      scores[i] = i;
+    }
+    console.log(scores);
+
+    // 清空数组
+    scores.length = 0;
+    console.log(scores);
+
+    // var array = [57, 90, 100];
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

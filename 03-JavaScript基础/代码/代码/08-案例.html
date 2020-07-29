@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // // 写一个函数，计算两个数的和
+    // function getSum(a, b) {
+    //   a = 100;
+    //   b = 1000;
+    //   console.log(a + b);
+    // }
+
+    // // getSum(10, 100);
+    // var x = 1;
+    // var y = 2;
+    // getSum(x, y);
+
+    // // 如果我们在函数内部修改形参的值，是否会影响函数外部实参的值？
+    // // 当我们在函数内部修改形参的值，不会影响外部的实参的值
+    // // 是因为调用函数的时候，是吧实参的值复制了一份赋给形参的
+    // console.log(x, y);
+
+
+
+    // - 圆的面积 = pi * r * r;
+    // function getArea(r) {
+    //   var pi = 3.1415926;
+    //   console.log(pi * r * r);
+    // }
+
+    // getArea(7);
+
+    // - 求2个数中的最大值
+    // function getMax(a, b) {
+    //   if (a > b) {
+    //     console.log(a);
+    //   } else {
+    //     console.log(b);
+    //   }
+    // }
+    // var x = 100;
+    // var y = 1000;
+    // getMax(x, y);
+
+    // - 求3个数中的最大值
+    // function getMax(a, b, c) {
+    //   if (a > b && a > c) {
+    //     console.log(a);
+    //   } else if (b > a && b > c) {
+    //     console.log(b);
+    //   } else if (c > a && c > b) {
+    //     console.log(c);
+    //   }
+    // } 
+
+    // getMax(11111, 100, 1000);
+    // 
+    // 求n个数的最大值？
+    // function getMax(arr) {
+    //   // 参数arr  是数组
+    //   var max = arr[0];
+    //   for (var i = 1; i < arr.length; i++) {
+    //     // 判断max和数组中之后的每一个元素进行比较
+    //     if (max < arr[i]) {
+    //       max = arr[i];
+    //     }
+    //   }
+    //   console.log(max);
+    // }
+
+    // var array = [12, 2, 45, 1, 10];
+    // getMax(array);
+    
+    // - 判断一个数是否是素数(又叫质数，只能被1和自身整数的数)
+    function jdugePrimeNumber(number) {
+      // 假设number是质数
+      var isPrime = true;
+      for (var i = 2; i < number; i++) {
+        // 判断是否有能被number整数的数
+        if (number % i === 0) {
+          // 如果此处执行了。说明不是质数
+          isPrime = false;
+          break;
+        }
+      }
+      if (isPrime) {
+        console.log('质数');
+      } else {
+        console.log('不是质数');
+      }
+    }
+    jdugePrimeNumber(13);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

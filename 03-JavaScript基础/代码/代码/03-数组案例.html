@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 求一组数中的所有数的和和平均值
+    // var numbers = [35, 12, 35, 90, 11, 12];
+    // // 和
+    // var sum = 0;
+    // // 平均值
+    // var avg;
+    // // 遍历数组
+    // // for (var i = 0; i <= numbers.length - 1; i++)
+    // for (var i = 0; i < numbers.length; i++) {
+    //   // sum = sum + numbers[i];
+    //   sum += numbers[i];
+    // }
+    // avg = sum / numbers.length;
+    // console.log('这组数的和：' + sum);
+    // console.log('这组数的平均值：' + avg);
+
+
+
+    // 求一组数中的最大值和最小值，以及所在位置(最大值和最小值在这组数中的位置)
+    // 
+    // 求一组数中的最大值
+    // var numbers = [65, 13, 101, 88, 10, 25];
+    // // 假设数组中的第一个数是最大值
+    // var max = numbers[0];
+    // for (var i = 1; i < numbers.length; i++) {
+    //   // 比赛  找最大的值
+    //   if (max < numbers[i]) {
+    //     max = numbers[i];
+    //   }
+    // }
+    // console.log(max);
+    // 
+    // 
+    // 
+    // 求一组数中的最大值和最小值
+    // var numbers = [65, 13, 101, 88, 10, 25];
+    // var max = numbers[0];
+    // var min = numbers[0];
+    // for (var i = 1; i < numbers.length; i++) {
+    //   // 找大的数
+    //   if (max < numbers[i]) {
+    //     max = numbers[i];
+    //   }
+    //   // 找小的数
+    //   if (min > numbers[i]) {
+    //     min = numbers[i];
+    //   }
+    // }
+    // console.log(max, min);
+    // 
+    // 
+    // 求一组数中的最大值和最小值，以及所在位置(最大值和最小值在这组数中的位置)
+    
+    // var numbers = [120, 13, 101, 88, 10, 25];
+    // var max = numbers[0];
+    // var min = numbers[0];
+    // // 最大值的索引
+    // var maxIndex = 0;
+    // // 最小值的索引
+    // var minIndex = 0;
+
+    // for (var i = 1; i < numbers.length; i++) {
+    //   // 找大的数
+    //   if (max < numbers[i]) {
+    //     max = numbers[i];
+    //     maxIndex = i;
+    //   }
+    //   // 找小的数
+    //   if (min > numbers[i]) {
+    //     min = numbers[i];
+    //     minIndex = i;
+    //   }
+    // }
+    // console.log(max, min);
+    // console.log(maxIndex, minIndex);
+
+    
+    
+    // // 将字符串数组用|或其他符号分割
+    // var names = ['郭德纲', '郭麒麟', '于谦', '岳云鹏', '烧饼'];
+    // // 让我们把数组中的每一项 用|或其他符号分割，形成一个字符串  '郭德纲|郭麒麟|于谦|岳云鹏|烧饼'
+    // //
+    // // 往元素后面加分隔符
+    // // 分隔符
+    // // var seperator = '!';
+    // // var str = '';
+    // // for (var i = 0; i < names.length; i++) {
+    // //   str = str + names[i] + seperator;
+    // // }
+    // // console.log(str);
+    // // 
+    // // 往第二个元素之前加分隔符
+    // // 分隔符
+    // var seperator = '|';
+    // var str = names[0];
+    // for (var i = 1; i < names.length; i++) {
+    //   str += seperator + names[i];
+    // }
+    // console.log(str);
+    
+
+    // // 要求将数组中的0项去掉，将不为0的值存入一个新的数组，生成新的数组
+    // var numbers = [5, 6, 89, 0, 11, 0, 12, 3, 0];
+    // //1 找到数组中不为0的所有元素
+    // // for (var i = 0; i < numbers.length; i++) {
+    // //   if (numbers[i] !== 0) {
+    // //     // numbers[i];
+    // //   }
+    // // }
+    // //2 把找到的非0元素存储到一个新的数组中
+    // var newArray = []; // 空数组
+    // for (var i = 0; i < numbers.length; i++) {
+    //   if (numbers[i] !== 0) {
+    //     // numbers[i];
+    //     // 找到的非0元素，存储到新的数组中
+    //     newArray[newArray.length] = numbers[i];
+    //   }
+    // }
+    // console.log(newArray);
+    // 
+    // var arr = [];
+    // arr[arr.length] = 1;  // arr.length = 0   [1]
+    // console.log(arr.length);
+    // arr[arr.length] = 2;  // arr.length = 1   [1, 2]
+    // // 此时 arr.length = 2   arr[arr.length] = 3
+
+
+
+    // 翻转数组   1，2,3,4  -》 4,3,2,1
+    var numbers = [4, 5, 7, 9];   // 生成一个新的数组  数组中存储 9 7 5 4
+    var newArray = [];
+    for (var i = numbers.length - 1; i >= 0; i--) {
+      newArray[newArray.length] = numbers[i];
+    }
+    console.log(newArray);
+    
+    
+    // 冒泡排序，从小到大
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

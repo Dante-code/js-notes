@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // - 求一组数中的最大值
+    // function getMax(arr) {
+    //   var max = arr[0];
+    //   for (var i = 1; i < arr.length; i++) {
+    //     if (max < arr[i]) {
+    //       max = arr[i];
+    //     }
+    //   }
+    //   // 函数的返回值
+    //   return max;
+    // }
+
+    // // 可以通过一个变量接受函数的返回值
+    // var array = [12, 1, 99, 10, 20];
+    // // var max = getMax(array);
+    // // console.log(max);
+    // // 
+    // var num = 5;
+    // var result = getMax(array) + num;
+    // console.log(result);
+    
+    // - 求一组数中的最小值
+    // - 求阶乘   5 * 4 * 3 * 2 * 1
+    // function getJieCheng(n) {
+    //   var result = 1;
+    //   for (var i = 1; i <= n; i++) {
+    //     // result *= i;
+    //     result = result * i;
+    //   }
+    //   return result;
+    // }
+
+    // var num = getJieCheng(5);
+    // console.log(num);
+
+
+
+
+
+    // - 求1!+2!+3!+....+n!    n!
+    // function getJieCheng(n) {
+    //   var result = 1;
+    //   for (var i = 1; i <= n; i++) {
+    //     // result *= i;
+    //     result = result * i;
+    //   }
+    //   return result;
+    // }
+
+    // function getSum(n) {
+    //   // 求1-n之间每一个数的阶乘的累加
+    //   var sum = 0;
+    //   for (var i = 1; i <= n; i++) {
+    //     // 累加的是每一个数的阶乘
+    //     sum += getJieCheng(i);
+    //   }
+    //   return sum;
+    // }
+    // // 第一次循环  i = 1    sum = 0 + 1 
+    // // 第二次循环  i = 2    sum = 1! + 2!
+
+    // // 1! + 2! + 3! + 4! + 5!
+    // console.log(getSum(5));
+    // 
+    // 
+    // 
+    // 
+    // 如果一个函数不需要返回值，可以不写return
+    // 当函数中不写return的时候，返回的是undefined
+    // return 后面可以什么都不跟，如果return后面什么都不跟 会返回undefined
+    function test(a, b) {
+      return;  // 函数执行的过程中只要遇到return 后面的代码就不会再执行
+      console.log(a, b);
+    }
+
+    var r = test(5, 6);
+    console.log(r);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

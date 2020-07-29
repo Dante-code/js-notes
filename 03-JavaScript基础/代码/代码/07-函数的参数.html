@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 为什么要有参数
+    // 在函数声明的时候，参数m 是没有值的。 当调用函数的时候，需要给函数的参数传值
+    // function getSum(m) {
+    //   var sum = 0;
+    //   for (var i = 1; i <= m; i++) {
+    //     sum += i;
+    //   }
+    //   console.log(sum);
+    // }
+
+    // // 调用函数
+    // getSum(100);
+
+    // getSum(1000);
+
+    // getSum(10000);
+    // 
+    // 
+    // 
+    // 写一个函数，可以求n-m之间所有数的和
+    // 在函数声明的时候。参数 叫做形参  形式参数（占位） 没有值
+    // 
+    function getSum(n, m) {
+      var sum = 0;
+      for (var i = n; i <= m; i++) {
+        sum += i;
+      }
+      console.log(sum);
+    }
+    // 函数调用
+    // 在函数调用的时候，我们需要给形参传递值
+    // 实参（实际参数）  把具体的值传递给形参
+    getSum(10, 100);
+    getSum(50, 500);
+    
+
+
+    // function getSum1() {
+    //   var sum = 0;
+    //   for (var i = 1; i <= 1000; i++) {
+    //     sum += i;
+    //   }
+    //   console.log(sum);
+    // }
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
