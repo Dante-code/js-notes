@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // var a = 10;
+    // var b = 20;
+    // var c = 30;
+    // console.log(a, b, c);
+
+
+    // function test(a, b, c) {
+    //   // 我们可以通过arguments 获取函数调用的时候的实参
+    //   // arguments非常想数组，但不是数组
+    //   console.log(arguments);
+    //   console.log(1);
+    // }
+
+    // test(4, 5, 6);
+    // 
+    // 
+    // 求任意个数的最大值
+
+
+    // getMax(数组)
+    
+    // function getMax() {
+    //   var max = arguments[0];
+    //   for (var i = 1; i < arguments.length; i++) {
+    //     if (max < arguments[i]) {
+    //       max = arguments[i];
+    //     }
+    //   }
+    //   return max;
+    // }
+
+    // var max = getMax(5, 10, 1, 5, 100);
+    // console.log(max);
+
+
+    // 求任意个数的和
+    function getSum() {
+      var sum = 0;
+      for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+      }
+      return sum;
+    }
+
+    var sum = getSum(5, 1, 3, 4);
+    console.log(sum);
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

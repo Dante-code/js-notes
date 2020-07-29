@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 全局作用域 -- 0级作用域链
+    var num = 5;
+    function f1() {
+      // f1 局部作用域   -- 1级作用域链
+      // var num = 15;
+      function f2() { 
+        // f2 局部作用域  -- 2级作用域链
+        console.log(num);
+      }
+      f2();
+    }
+    f1();
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

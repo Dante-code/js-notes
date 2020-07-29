@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // console.log(num);
+    // var num = 5;
+    // 
+
+    // f1();
+    // function f1() {
+    //   console.log('hello');
+    // }
+    // 
+    // 预解析
+    //    1 变量提升，把变量的声明提升到当前作用域的最上面，不包括变量的赋值
+    //    2 函数提升，把函数的声明提升到当前作用域的最上面，不包括函数的调用
+    //    
+    // console.log(num);
+    // var num = 5;
+
+    // // 预解析
+    // var num;
+    // console.log(num);
+    // num = 5;
+    // 
+    // 
+    // f1();
+    // function f1() {
+    //   console.log('hello');
+    // }
+
+    // // 预解析
+    // function f1() {
+    //   console.log('hello');
+    // }
+
+    // f1();
+    
+    
+
+    // 案例1
+    // var a = 25;
+    // function abc() {
+    //   alert(a); 
+    //   var a = 10;
+    // }
+    // abc();
+
+    // // 预解析
+    // var a;
+    // function abc() {
+    //   // 局部作用域  预解析
+    //   var a;
+    //   alert(a); 
+    //   a = 10;
+    // }
+    // a = 25;
+    // abc();
+
+
+
+
+    // // 案例2
+    // console.log(a);
+    // function a() {
+    //   console.log('aaaaa');
+    // }
+    // var a = 1;
+    // console.log(a);
+
+    // 预解析
+    // 在预解析的过程中如果函数和变量的名字相同，此时函数优先
+    // var a;
+    // function a() {
+    //   console.log('aaaaa');
+    // }
+
+    // console.log(a);
+    // a = 1;
+    // console.log(a);
+
+    
+    
+
+
+    // 1、-----------------------------------
+    // var num = 10;
+    // fun();
+    // function fun() {
+    //   console.log(num);
+    //   var num = 20;
+    // }
+    //2、-----------------------------------
+    // var a = 18;
+    // f1();
+    // function f1() {
+    //   var b = 9;
+    //   console.log(a);
+    //   console.log(b);
+    //   var a = '123';
+    // }
+
+    // // 预解析
+    // var a;
+    // function f1() {
+    //   var b;
+    //   var a;
+    //   b = 9;
+    //   console.log(a);
+    //   console.log(b);
+    //   a = '123';
+    // }
+
+    // a = 18;
+    // f1();
+
+
+
+
+    // 3、-----------------------------------
+    function f1() {
+      var a;
+      a = b = c = 9;
+      console.log(a);
+      console.log(b);
+      console.log(c);
+    }
+    f1();
+    console.log(c);
+    console.log(b);
+    console.log(a);
+    
+
+    // var a = b = c = 9;
+    // var a = 9;
+    // // 全局变量
+    // b = 9
+    // c = 9;
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 如何创建一个对象，如何使用对象的成员
+    // 对象：属性和方法  -- 成员
+    // 函数和对象有什么区别
+    // 函数 - 可以封装一段代码
+    // 对象 - 封装一组属性和方法
+    // 
+    // 
+    // 创建dog对象
+    // 属性：name 昵称  type 品种  age  color
+    // 方法：bark 叫   eat  吃
+    
+    var dog = {
+      name: 'puppy',
+      type: '中华田园犬',
+      age: 2,
+      color: 'yellow',
+
+      bark: function () {
+        // 在方法中如何使用属性的值
+        // this 在方法中代表的是当前对象 dog
+        console.log(this.name + '汪汪汪');
+      },
+      eat: function () {
+        console.log(this.name + '啃骨头');
+      }
+    }
+
+    // 如何访问属性   对象.属性名
+    console.log(dog.name);
+    console.log(dog.type);
+    // 如何访问方法   对象.方法名
+    dog.bark();
+    dog.bark();
+    dog.eat();
+
+
+    // 属性的另一种访问方式  
+    // 访问数组中的某个元素  array[0]
+    console.log(dog['name']);
+    console.log(dog['age']);
+
+
+    // 函数和方法有什么区别？
+    // 函数: 独立存在的函数  
+    // function fn() {
+
+    // }
+
+    // fn();  // 函数调用
+
+    // //方法：属于对象的函数 
+    // dog.bark();  // 方法的调用
+    // 
+    // 
+    // 创建一个hero对象
+    // 属性：name 名字  装备  weapon 武器  blood 
+    // 方法：attack 攻击   run 
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

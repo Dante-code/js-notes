@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // var obj = {
+    //   name: 'zs',
+    //   age: 18,
+    //   sex: '男',
+    //   sayHi: function () {
+    //     console.log(this.name + ': hello');
+    //   }
+    // };
+
+
+    // // 如何访问对象的属性
+    // // obj.name
+    // // obj['name']
+    
+    // // for in  可以遍历对象的成员
+    // for (var key in obj) {
+    //   console.log(key + '---' + obj[key]);
+    // }
+    // 
+    // 
+    
+    // var o = {};
+    // for (var i = 0; i < 10; i++) {
+    //   o['a' + i] = i * 2;
+    // }
+
+
+    // for (var key in o) {
+    //   console.log(key + '---' + o[key]);
+    // }
+    // 
+    // 
+    // 
+    // 删除属性   delete 删除对象的成员
+    var o = {
+      name: 'abc',
+      say: function () {
+      }
+    }
+
+    // console.log(o.name);
+    // delete o.name;
+    // console.log(o.name);
+    // 
+    console.log(o.say);
+    delete o.say;
+    console.log(o.say);
+
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

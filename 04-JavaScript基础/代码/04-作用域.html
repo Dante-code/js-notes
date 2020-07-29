@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 在函数内部定义的变量，在函数外部是否可以访问
+    // function fn() {
+    //   var num = 5;
+    // }
+    // // num is not defined
+    // console.log(num);
+    // 
+    // 作用域：变量或者函数可以起作用的访问
+    // ECMAScript
+    // 全局作用域：在script或者一个独立的js文件中，在全局作用域中定义的变量  全局变量。在任何位置都可以访问
+    // var num = 15;
+
+    // function fn() {
+    //   // 全局变量   不建议这样，这样是不规范的
+    //   str = 'abc';
+    //   console.log(num);
+    //   console.log(str);
+    // }
+    // fn();
+    // console.log(str);
+    // 局部作用域：任何一个函数的内部都有一个局部作用域，在局部作用域中定义的变量 局部变量。局部变量只有在定义该变量的函数中可以访问
+    // function fn() {
+    //   // 局部变量
+    //   var num = 5;
+    // }
+    // // num is not defined
+    // console.log(num);
+    // 
+    // 
+    // 块级作用域：在ECMAScript中没有块级作用域。
+    // 代码块
+    {
+      // 代码块
+      var num = 5;
+      console.log(num);
+    }
+    console.log(num);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

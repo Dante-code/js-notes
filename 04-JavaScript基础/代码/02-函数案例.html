@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 求斐波那契数列Fibonacci中的第n个数是多少？      1 1 2 3 5 8 13 21...
+    // function getFib(n) {
+    //   // 函数体
+    //   var n1 = 1;
+    //   var n2 = 1;
+    //   var n3;
+    //   for (var i = 3; i <= n; i++) {
+    //     n3 = n1 + n2;
+    //     n1 = n2;
+    //     n2 = n3;
+    //   }
+    //   return n3;
+    // }
+
+    // var r = getFib(6);
+    // console.log(r);
+
+
+
+
+    // 翻转数组，返回一个新数组   [5, 4, 3, 2, 1] -> [1, 2, 3, 4, 5]
+    // function reverse(array) {
+    //   var newArray = [];
+    //   for (var i = array.length - 1; i >= 0; i--) {
+    //     newArray[newArray.length] = array[i];
+    //   }
+    //   return newArray;
+    // }
+
+    // // var arr = [5, 3, 2, 1];
+    // // console.log(reverse(arr));
+
+    // var arr = ['abc', 'xyz', '123'];
+    // console.log(reverse(arr));
+    
+
+
+    // 对数组排序，从小到大  -- 冒泡排序
+    // function sort(array) {
+    //   // 外层循环 控制趟数
+    //   for (var i = 0; i < array.length - 1; i++) {
+    //     // 假设排好序了
+    //     var isSort = true;
+    //     // 内层循环 控制比较的次数
+    //     for (var j = 0; j < array.length - 1 - i; j++) {
+    //       if (array[j] > array[j + 1]) {
+    //         isSort = false;
+    //         // 交换位置
+    //         var tmp = array[j];
+    //         array[j] = array[j + 1];
+    //         array[j + 1] = tmp;
+    //       }
+    //     }
+    //     // 判断是否排好了
+    //     if (isSort) {
+    //       break;
+    //     }
+    //   }
+    //   return array;
+    // } 
+
+    // var array = [34, 12, 88, 20, 30];
+
+    // console.log(sort(array));
+    // }
+
+    // 输入一个年份，判断是否是闰年[闰年：能被4整数并且不能被100整数，或者能被400整数]
+    // function isRun(year) {
+    //   var result = false;
+    //   if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    //     result = true;
+    //   } 
+    //   return result;
+    // }
+
+    // console.log(isRun(2016));
+     
+    
+    // 输入某年某月某日，判断这一天是这一年的第几天？
+    // 1998 5 18 
+    // 5月份 18
+    // 4月份 30
+    // 3月份 31
+    // 2月份 闰年的时候29天  平年的时候28天
+    // 1月份 31
+    // 
+    // 判断年份是否是闰年
+    function isRun(year) {
+      var result = false;
+      if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        result = true;
+      } 
+      return result;
+    }
+    // 获取年月日 是当前年的多少天
+    function getDays(year, month, day) {
+      // 计算总共有多少天
+      var days = day;   // 当前月份的天数
+      for (var i = 1; i < month; i++) {
+        switch (i) {
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+            days += 31;
+            break;
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+            days += 30;
+            break;
+          case 2:
+            // 判断是平年28还是闰年29
+            if (isRun(year)) {
+              days += 29;
+            } else {
+              days += 28;
+            }
+            break;
+        }
+      }
+      return days;
+    } 
+
+    console.log(getDays(1998, 5, 2));
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
