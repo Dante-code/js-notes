@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 判断一个人的年龄是否满18岁(是否成年)
+    var age = 18;
+    if (age >= 18) {
+      console.log('成年');
+    } else {
+      console.log('未成年');
+    }
+
+    // 判断一个年份是闰年还是平年
+    //   闰年：能被4整除，但不能被100整除的年份 或者 能被400整除的年份
+    
+    // 有两个条件 分别是
+    // 1 能被4整除，但不能被100整除
+    // 2 能被400整除
+    // 满足这两个条件就是闰年，所以他们是或者的关系
+    // 对应的条件代码
+    // 1 能被4整除，但不能被100整除 ->  year % 4 === 0 && year % 100 !== 0
+    // 2 能被400整除  year % 400 === 0
+
+    var year = 2016;
+    if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+      console.log('是闰年');
+    } else {
+      console.log('是平年');
+    }
+    
+
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

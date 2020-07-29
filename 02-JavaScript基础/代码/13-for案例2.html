@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 在控制台打印正方形
+    // for (var i = 0; i < 5; i++) {
+    //   console.log('*');
+    // }
+
+    // console.log('*');
+    // console.log('*');
+    // console.log('*');
+    
+    // var str = '';
+    // // 外层的循环控制输出多少行
+    // for (var j = 0; j < 10; j++) {
+    //   // 控制一行中输出 10 个*
+    //   for (var i = 0; i < 10; i++) {
+    //     // str = str + '*';
+    //     str += '* ';
+    //   }
+    //   // str = str + '\n';
+    //   str += '\n';
+    // }
+    
+    // console.log(str);
+
+
+
+
+    // 在控制台打印三角形
+    // 外层循环 控制输出的行数
+    // var str = '';
+    // for (var i = 0; i < 10; i++) {
+    //   // 内层循环  控制输出的每一行的*的个数
+    //   for (var j = i; j < 10; j++) {
+    //     str += '* ';
+    //   }
+    //   str += '\n';
+    // }
+    // console.log(str);
+    
+
+
+
+    // 99乘法表
+    // 外层循环  控制输出多少行
+    var str = '';
+    for (var i = 1; i <= 9; i++) {
+      // 内层循环  控制每一行有多少个内容
+      for (var j = i; j <= 9; j++) {
+        str += i + '*' + j + '=' + i * j + '\t';
+      }
+      str += '\n';
+    }
+    console.log(str);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

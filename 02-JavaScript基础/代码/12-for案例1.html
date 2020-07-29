@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 打印1-100之间所有数
+    // 求1-100之间所有数的和
+    // var sum = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //   // sum = sum + i;
+    //   sum += i;
+    // }
+    // console.log(sum);
+    // 
+    // 
+    // 求1-100之间所有数的平均值
+    //   (5 + 6 + 7) / 3
+    // var sum = 0;
+    // var avg;
+    // for (var i = 1; i <= 100; i++) {
+    //   sum += i;
+    // }
+    // avg = sum / 100;
+    // console.log(avg);
+
+    // 求1-100之间所有偶数的和
+    // 
+    // var sum = 0;
+    // for (var i = 1; i <= 100; i++) {
+    //   // 找到偶数
+    //   if (i % 2 === 0) {
+    //     sum += i;
+    //   }
+    // }
+    // console.log(sum);
+
+    // 同时求1-100之间所有偶数和奇数的和
+    var oddSum = 0;  // 奇数的和
+    var evenSum = 0; // 偶数的和
+    for (var i = 1; i <= 100; i++) {
+      // 判断i是奇数还是偶数
+      if (i % 2 === 0) {
+        // 偶数
+        evenSum += i;
+      } else {
+        //奇数
+        oddSum += i;
+      }
+    }
+    console.log('奇数的和：' + oddSum);
+    console.log('偶数的和：' + evenSum);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

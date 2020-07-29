@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 求1-100之间不能被7整除的整数的和（用continue）
+    // 求和
+    // var sum = 0; 
+    // // 循环1-100之间所有的数
+    // for (var i = 0; i <= 100; i++) {
+    //   // 如果i能被7整除继续下一次循环
+    //   if (i % 7 === 0) {
+    //     continue;
+    //   }
+    //   sum += i;
+    // }
+    // console.log(sum);
+
+    // 求200-300之间所有的奇数的和（用continue）
+    // 求和
+    // var sum = 0;
+    // // 遍历200-300之间所有的数字
+    // for (var i = 200; i <= 300; i++) {
+    //   // 如果是偶数继续下一次循环
+    //   if (i % 2 === 0) {
+    //     continue;
+    //   }
+    //   sum += i;
+    // }
+    // console.log(sum);
+
+    // 求200-300之间第一个能被7整数的数（break）
+    for (var i = 200; i <= 300; i++) {
+      // 如果i能被7整除输出i的值，跳出循环
+      if (i % 7 === 0) {
+        console.log(i);
+        break;
+      }
+    }
+    
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
