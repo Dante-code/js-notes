@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  xianshi{font-family:'lucida sans unicode','arial unicode ms';}
+    *,body{font-size:12px;color:#333;font-family:Verdana, Arial, Helvetica, sans-serif;padding:0;margin:0;}
+/* public style */
+a{color:#006db7;text-decoration:underline;}
+body{background:#f5fcff url(bg.gif) left 25px repeat-x;width:expression(document.body.clientWidth<=996?"996px":"auto");min-width:996px;height:100%;margin:0;}
+h1,h2,h3,h4,h5,h6{ margin:0;padding:0;}
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#333;text-decoration:none;}
+h1 a:hover,h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{color:#006db7;}
+a img{border:0;}
+.but{width:76px;height:26px;}
+.hidden{display:none}
+.right{text-align:right}
+.center{text-align:center}
+.left{text-align:left}
+.fright{float:right}
+.fleft{float:left}
+a .white,.white{color:#fff;}
+a .green,.green{color:#008000;}
+a .red,.red{color:red}
+a .blue,.blue{color:blue}
+a .pink,.pink{color:#c00}
+a .gray,.gray{color:#aaa}
+a .yellow,.yellow{color:#ff0;}
+a .black,.black{color:#333;}
+.f10,.f10 p,.f10 div,.f10 b{font-size:10px}
+.f12,.f12 p,.f12 div,.f12 b{font-size:12px}
+.f14,.f14 p,.f14 div,.f14 b{font-size:14px}
+.f16,.f16 p,.f16 div,.f16 b{font-size:16px}
+.f18,.f18 p,.f18 div,.f18 b{font-size:18px}
+.f24,.f24 p,.f24 div,.f24 b{font-size:24px}
+.f36,.f36 p,.f36 div,.f36 b{font-size:36px}
+.f48,.f48 p,.f48 div,.f48 b{font-size:48px}
+.l150,.l150 p,.l150 div{line-height:150%;}
+.l180,.l180 p,.l180 div{line-height:180%;}
+.l200,.l200 p,.l200 div{line-height:200%;}
+.l300,.l300 p,.l300 div{line-height:300%;}
+.p8{padding:8px;}
+.pl8{padding-left:8px;}
+.pr8{padding-right:8px;}
+.pt8{padding-top:8px;}
+.pb8{padding-bottom:8px;}
+.block{display:block}
+.b0{border:0}
+.cboth{clear:both;}
+.b{font-weight:bold;}
+.nor{font-weight:normal;}
+hr,div.rpanel hr{border:0;border-top:1px solid #ffd0d0;font-size:0;margin:4px 0;padding:0;_margin:0;}
+div.panel hr{border-top:1px solid #adf;}
+a.noline{text-decoration:none;}
+a.noline:hover{text-decoration:none;}
+p{padding:5px 0 6px 0;word-break:break-all;word-wrap:break-word;}
+/* public style end */
+/*------------------------*/
+#mainbox{ padding:0 250px 0 0;width:988px;width:738px!important;margin:0 auto;}
+  #mainbox a{}
+  #mainbox a.visted{color:#800080;}
+#fullbox,.fullbox{width:988px;margin:0 auto;}
+.leftbox{width:100%;float:left;}
+.rightbox{width:250px;margin-right:-100%;float:left;}
+/*----------leftbox CSS------------*/
+.leftbox{}
+.panel,.rpanel{background:#fff;margin:0 8px 8px 0;border:1px #adf solid;border-top:0;clear:both;}
+.rpanel{margin:0 0 8px 8px;}
+#fullbox .panel,#fullbox .rpanel,.fullbox .panel,.fullbox .rpanel{margin:0 0 8px 0;}
+.mtitle,.rtitle,#top,.gtitle{background:#fff url(bg_t.jpg) repeat-x;clear:both;}
+.mtitle,.rtitle,.gtitle{padding:0 0 0 8px;padding:2px 0 0 8px!important;border-top:1px #adf solid;border-bottom:1px #adf solid;line-height:25px;height:25px;line-height:22px!important;height:22px!important;display:block;}
+.rtitle{background-position:0 -78px;border-top:1px #ffd0d0 solid;border-bottom:1px #ffd0d0 solid;}
+.gtitle{background-position:0 -110px;border-top:1px #bbe1a6 solid;border-bottom:1px #bbe1a6 solid;}
+.mcon{margin:10px;clear:both;}
+.more{float:right;text-align:right;padding:0 8px 0 0;}
+
+a.app{position:relative;width:220px;height:60px;float:left;margin:5px 10px;display:inline;text-decoration:none;}
+a.app:hover{text-decoration:none;background:#fff6b1 url(appbutton.gif) 0 0 no-repeat;}
+a.app img.appimg{top:15px;left:10px;position:absolute;cursor:pointer;}
+a.app span.apptitle{position:absolute;left:54px;top:13px;font-size:14px;font-weight:bold;color:#2864a6;cursor:pointer;}
+a.app span.appintro{position:absolute;left:54px;top:34px;font-size:12px;color:#a5a5a5;cursor:pointer;}
+a.app:hover span.appintro{color:#666;}
+/*---------------------------------*/
+.rightbox{}
+.adbox{margin:0 0 8px 0;padding:0;}
+.r_panel{background:#fff;border-left:1px #adf solid;border-right:1px #adf solid;border-bottom:1px #adf solid;margin-bottom:8px;}
+.r_panel ul,.g_panel ul{margin:0;padding:0;}
+.r_panel ul li,.g_panel ul li{list-style:none;padding:4px;padding-left:10px;border-bottom:1px #eee solid;}
+.g_panel{background:#fff;border-left:1px #bbe1a6 solid;border-right:1px #bbe1a6 solid;border-bottom:1px #bbe1a6 solid;margin-bottom:8px;}
+.but_L1,.but_L2,.but_Z1,.but_Z2,#moretools,ul.lst li,ul.lst2 li,ul.lst3 li,ul.lst4 li{background:#fff url(icon.gif) no-repeat;}
+.but_L1,.but_L2,.but_Z1,.but_Z2{padding:0;margin:0;border:0;color:#464646;width:82px;height:23px;line-height:23px;vertical-align:middle;cursor:pointer!important;cursor:hand;}
+.but_Z1,.but_Z2{width:67px;}
+.but_L1{background-position:-80px -35px;background-color:#cdee7b;}
+.but_L2{background-position:-80px -61px;background-color:#cdee7b;}
+.but_Z1{background-position:-10px -35px;}
+.but_Z2{background-position:-10px -61px;}
+.inp,.inp_2,.inp2,.inp2_2,.inp3,.inp3_2,.inp4,.inp4_2,.inp5,.inp5_2{width:288px;width:280px!important;font-family:Verdana, Arial, Helvetica;border:#A1BCA3 1px solid;vertical-align:middle;height:23px;height:18px!important;line-height:21px;line-height:16px!important;padding:3px 3px 0 3px;}
+.inp_2,.inp2_2,.inp3_2,.inp4_2,.inp5_2{border:#99e300 1px solid;}
+.inp2,.inp2_2{width:208px;width:200px!important;}
+.inp3,.inp3_2{width:108px;width:100px!important;}
+.inp4,.inp4_2{width:58px;width:50px!important;}
+.inp5,.inp5_2{width:28px;width:20px!important;}
+
+#top{height:25px;line-height:25px;padding:0 8px;background-position:0 -42px;}
+  #top a{font-size:12px;}
+  #menu{float:left;}
+    #menu ul{margin:0;padding:0;}
+    #menu ul li{list-style-type:none;float:left;padding:0 8px 0 0;}
+    #moretools{display:block;padding:0 12px 0 0;background-position:-192px -46px;color:#0353ce;}
+  #moremenu{background:#fff;border:1px solid #81A9E6;position:absolute;top:21px;left:198px;width:100px;z-index:9;display:none;}
+    #moremenu ul{margin:0;padding:0;}
+    #moremenu ul li{list-style-type:none;line-height:24px;height:24px;}
+    #moremenu ul li a{display:block;text-decoration:none;padding:0 5px;}
+    #moremenu ul li a:hover{background-color:#36c;color:#fff;}
+    #moremenu ul li.bort{border-top:1px solid #b2d0ea;}
+  #ulink{float:right;}
+.miniMenu{background-color:#f7ffff;border-bottom:1px solid #dff2ff;}
+#header{padding:10px 0;width:970px;margin:0 auto;}
+  #header h1,#header h1 a,#tt{font-size:32px;font-weight:bold;}
+/* footer */
+#footer{line-height:180%;text-align:center;color:#999;padding: 5px 0 10px 0;}
+  #footer a,#footer a:visited{color:#999;}
+
+ul.all,ul.lst,ul.lst1,ul.lst2,ul.lst3,ul.lst4,ul.lst5,ul.lst6{padding:0;margin:0;margin:0 0 8px 0!important;width:100%;}
+  ul.all li,ul.lst li,ul.lst1 li,ul.lst2 li,ul.lst3 li,ul.lst4 li{background-position:-500px -3px;list-style-type:none;float:left;padding:0 0 0 12px;line-height:24px;height:24px;overflow:hidden;}
+  ul.all li{width:108px!important;width:120px;}
+  ul.lst li{width:233px!important;width:245px;}
+  ul.lst1 li{width:358px!important;width:370px;}
+  ul.lst2 li{width:108px!important;width:120px;}
+  ul.lst3 li{width:168px!important;width:180px;}
+  ul.lst4 li{width:93px!important;width:105px;}
+  ul.lst5 li{list-style-type:none;float:left;padding:0 0 0 12px;line-height:28px;height:28px;overflow:hidden;width:108px!important;width:120px;}
+  ul.lst6 li{width:168px!important;width:180px;list-style-type:none;float:left;padding:0 0 0 12px;line-height:32px;height:32px;overflow:hidden;}
+
+ul.l2,ul.l3,ul.l4,ul.l5,ul.l6,ul.l7,ul.l8{padding:0;margin:0;margin:0 0 8px 0!important;width:100%;list-style-type:none;clear:both;}
+ul.l2 li,ul.l3 li,ul.l4 li,ul.l5 li,ul.l6 li,ul.l7 li,ul.l8 li{float:left;padding:0 0 0 12px;line-height:24px;height:24px;overflow:hidden;display:block;}
+  ul.l2 li{width:342px!important;width:354px;_width:342px;}
+  ul.l3 li{width:224px!important;width:236px;_width:224px;}
+  ul.l4 li{width:165px!important;width:177px;_width:165px;}
+  ul.l5 li{width:129px!important;width:141px;_width:129px;}
+  ul.l6 li{width:106px!important;width:118px;_width:106px;}
+  ul.l7 li{width:89px!important;width:101px;_width:89px;}
+  ul.l8 li{width:76px!important;width:88px;_width:76px;}
+
+ul.img{background-position:-500px -3px;}
+
+table.bx{border-bottom:1px solid #adf;text-align:center;border-collapse:collapse;}
+table.bx thead th,table.bx tbody th{border:1px solid #adf;background-color:#e7f1ff;line-height:24px;font-size:12px;padding:0 5px;font-weight:normal;}
+table.bx td{font-size:12px;border:1px solid #adf;line-height:24px;font-family:Arial;padding:0 4px;word-break:break-all;}
+table.bx td a{font-size:12px;}
+
+select{vertical-align:middle;height:23px;font-size:14px;}
+
+#allcha{background-color:#e1f5ff;padding:10px;clear:both;text-align:center;}
+#alltools{background-color:#f5fcff;border:1px #adf solid;padding:9px;clear:both;width:960px!important;width:980px;margin:10px auto 0 auto;}
+
+ul{margin:0;padding:0;}
+ul.dh li{list-style:none;padding:0 8px;border:0;line-height:200%;width:62px;width:46px!important;float:left;}
+ul.tl li{list-style:none;padding:0 8px;border:0;line-height:200%;width:118px;width:102px!important;float:left;overflow:hidden;}
+.hpanel{background:#fff;margin:0 8px 8px 0;border:1px #adf solid;border-top:0;float:left;width:369px;width:359px!important;}
+.topd{margin:0 auto 8px auto;border:1px solid #adf;clear:both;background:url(bg_t.jpg) repeat-x;padding:2px 0 0 8px;padding:0 0 0 8px!important;line-height:29px;height:29px;line-height:26px!important;height:26px!important;width:980px;width:970px!important;display:block;}
+.flink{margin:0 auto 8px auto;border:1px solid #adf;clear:both;padding:2px 6px;line-height:24px;line-height:21px!important;width:980px;width:966px!important;display:block;background-color:#fff;}
+
+#msg_win{background-color:transparent;width:300px;position:absolute;right:0;font-size:12px;font-family:Arial;margin:0px;display:none;overflow:hidden;z-index:99;}
+#msg_win .aicos{z-index:9;}
+.aicos a{float:right;color:#333;margin:1px;text-align:center;font-weight:bold;width:14px;height:22px;line-height:22px;padding:1px;text-decoration:none;font-family:webdings;}
+.aicos a:hover{color:#000;}
+#msg_content{margin:0px;width:300px;height:250px;overflow:hidden;}
+
+.qrcode{width:99px;overflow:visiable;position:fixed;_position:absolute;left:50%;bottom:10px;margin-left:505px;z-index:100;display:block;text-align:center;line-height:200%;}
+  </style>
+</head>
+<body>
+  <p>　　ASCII（American Standard Code for Information Interchange，美国信息互换标准代码，ASCⅡ）是基于拉丁字母的一套电脑编码系统。它主要用于显示现代英语和其他西欧语言。它是现今最通用的单字节编码系统，并等同于国际标准ISO/IEC 646。</p>
+<p>　　ASCII第一次以规范标准的型态发表是在1967年，最后一次更新则是在1986年，至今为止共定义了128个字符，其中33个字符无法显示（这是以现今操作系统为依归，但在DOS模式下可显示出一些诸如笑脸、扑克牌花式等8-bit符号），且这33个字符多数都已是陈废的控制字符，控制字符的用途主要是用来操控已经处理过的文字，在33个字符之外的是95个可显示的字符，包含用键盘敲下空白键所产生的空白字符也算1个可显示字符（显示为空白）。</p>
+<hr size="1" />
+<h3 class="f14 p8 center pink">ASCII控制字符</h3>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bx">
+<thead>
+<tr valign="bottom">
+<th>二进制</th>
+<th>十进制</th>
+<th>十六进制</th>
+<th>缩写</th>
+<th>可以显示的表示法</th>
+<th>名称/意义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0000&#160;0000</td>
+<td align="center">0</td>
+<td align="center">00</td>
+<td align="center">NUL</td>
+<td align="center" class="xianshi">␀</td>
+<td>空字符（Null）</td>
+</tr>
+<tr>
+<td>0000&#160;0001</td>
+<td align="center">1</td>
+<td align="center">01</td>
+<td align="center">SOH</td>
+<td align="center" class="xianshi">␁</td>
+<td>标题开始</td>
+</tr>
+<tr>
+<td>0000&#160;0010</td>
+<td align="center">2</td>
+<td align="center">02</td>
+<td align="center">STX</td>
+<td align="center" class="xianshi">␂</td>
+<td>本文开始</td>
+</tr>
+<tr>
+<td>0000&#160;0011</td>
+<td align="center">3</td>
+<td align="center">03</td>
+<td align="center">ETX</td>
+<td align="center" class="xianshi">␃</td>
+<td>本文结束</td>
+</tr>
+<tr>
+<td>0000&#160;0100</td>
+<td align="center">4</td>
+<td align="center">04</td>
+<td align="center">EOT</td>
+<td align="center" class="xianshi">␄</td>
+<td>传输结束</td>
+</tr>
+<tr>
+<td>0000&#160;0101</td>
+<td align="center">5</td>
+<td align="center">05</td>
+<td align="center">ENQ</td>
+<td align="center" class="xianshi">␅</td>
+<td>请求</td>
+</tr>
+<tr>
+<td>0000&#160;0110</td>
+<td align="center">6</td>
+<td align="center">06</td>
+<td align="center">ACK</td>
+<td align="center" class="xianshi">␆</td>
+<td>确认回应</td>
+</tr>
+<tr>
+<td>0000&#160;0111</td>
+<td align="center">7</td>
+<td align="center">07</td>
+<td align="center">BEL</td>
+<td align="center" class="xianshi">␇</td>
+<td>响铃</td>
+</tr>
+<tr>
+<td>0000&#160;1000</td>
+<td align="center">8</td>
+<td align="center">08</td>
+<td align="center">BS</td>
+<td align="center" class="xianshi">␈</td>
+<td>退格</td>
+</tr>
+<tr>
+<td>0000&#160;1001</td>
+<td align="center">9</td>
+<td align="center">09</td>
+<td align="center">HT</td>
+<td align="center" class="xianshi">␉</td>
+<td>水平定位符号</td>
+</tr>
+<tr>
+<td>0000&#160;1010</td>
+<td align="center">10</td>
+<td align="center">0A</td>
+<td align="center">LF</td>
+<td align="center" class="xianshi">␊</td>
+<td>换行键</td>
+</tr>
+<tr>
+<td>0000&#160;1011</td>
+<td align="center">11</td>
+<td align="center">0B</td>
+<td align="center">VT</td>
+<td align="center" class="xianshi">␋</td>
+<td>垂直定位符号</td>
+</tr>
+<tr>
+<td>0000&#160;1100</td>
+<td align="center">12</td>
+<td align="center">0C</td>
+<td align="center">FF</td>
+<td align="center" class="xianshi">␌</td>
+<td>换页键</td>
+</tr>
+<tr>
+<td>0000&#160;1101</td>
+<td align="center">13</td>
+<td align="center">0D</td>
+<td align="center">CR</td>
+<td align="center" class="xianshi">␍</td>
+<td>归位键</td>
+</tr>
+<tr>
+<td>0000&#160;1110</td>
+<td align="center">14</td>
+<td align="center">0E</td>
+<td align="center">SO</td>
+<td align="center" class="xianshi">␎</td>
+<td>取消变换（Shift out）</td>
+</tr>
+<tr>
+<td>0000&#160;1111</td>
+<td align="center">15</td>
+<td align="center">0F</td>
+<td align="center">SI</td>
+<td align="center" class="xianshi">␏</td>
+<td>启用变换（Shift in）</td>
+</tr>
+<tr>
+<td>0001&#160;0000</td>
+<td align="center">16</td>
+<td align="center">10</td>
+<td align="center">DLE</td>
+<td align="center" class="xianshi">␐</td>
+<td>跳出数据通讯</td>
+</tr>
+<tr>
+<td>0001&#160;0001</td>
+<td align="center">17</td>
+<td align="center">11</td>
+<td align="center">DC1</td>
+<td align="center" class="xianshi">␑</td>
+<td>设备控制一（XON 启用软件速度控制）</td>
+</tr>
+<tr>
+<td>0001&#160;0010</td>
+<td align="center">18</td>
+<td align="center">12</td>
+<td align="center">DC2</td>
+<td align="center" class="xianshi">␒</td>
+<td>设备控制二</td>
+</tr>
+<tr>
+<td>0001&#160;0011</td>
+<td align="center">19</td>
+<td align="center">13</td>
+<td align="center">DC3</td>
+<td align="center" class="xianshi">␓</td>
+<td>设备控制三（XOFF 停用软件速度控制）</td>
+</tr>
+<tr>
+<td>0001&#160;0100</td>
+<td align="center">20</td>
+<td align="center">14</td>
+<td align="center">DC4</td>
+<td align="center" class="xianshi">␔</td>
+<td>设备控制四</td>
+</tr>
+<tr>
+<td>0001&#160;0101</td>
+<td align="center">21</td>
+<td align="center">15</td>
+<td align="center">NAK</td>
+<td align="center" class="xianshi">␕</td>
+<td>确认失败回应</td>
+</tr>
+<tr>
+<td>0001&#160;0110</td>
+<td align="center">22</td>
+<td align="center">16</td>
+<td align="center">SYN</td>
+<td align="center" class="xianshi">␖</td>
+<td>同步用暂停</td>
+</tr>
+<tr>
+<td>0001&#160;0111</td>
+<td align="center">23</td>
+<td align="center">17</td>
+<td align="center">ETB</td>
+<td align="center" class="xianshi">␗</td>
+<td>区块传输结束</td>
+</tr>
+<tr>
+<td>0001&#160;1000</td>
+<td align="center">24</td>
+<td align="center">18</td>
+<td align="center">CAN</td>
+<td align="center" class="xianshi">␘</td>
+<td>取消</td>
+</tr>
+<tr>
+<td>0001&#160;1001</td>
+<td align="center">25</td>
+<td align="center">19</td>
+<td align="center">EM</td>
+<td align="center" class="xianshi">␙</td>
+<td>连接介质中断</td>
+</tr>
+<tr>
+<td>0001&#160;1010</td>
+<td align="center">26</td>
+<td align="center">1A</td>
+<td align="center">SUB</td>
+<td align="center" class="xianshi">␚</td>
+<td>替换</td>
+</tr>
+<tr>
+<td>0001&#160;1011</td>
+<td align="center">27</td>
+<td align="center">1B</td>
+<td align="center">ESC</td>
+<td align="center" class="xianshi">␛</td>
+<td>跳出</td>
+</tr>
+<tr>
+<td>0001&#160;1100</td>
+<td align="center">28</td>
+<td align="center">1C</td>
+<td align="center">FS</td>
+<td align="center" class="xianshi">␜</td>
+<td>文件分割符</td>
+</tr>
+<tr>
+<td>0001&#160;1101</td>
+<td align="center">29</td>
+<td align="center">1D</td>
+<td align="center">GS</td>
+<td align="center" class="xianshi">␝</td>
+<td>组群分隔符</td>
+</tr>
+<tr>
+<td>0001&#160;1110</td>
+<td align="center">30</td>
+<td align="center">1E</td>
+<td align="center">RS</td>
+<td align="center" class="xianshi">␞</td>
+<td>记录分隔符</td>
+</tr>
+<tr>
+<td>0001&#160;1111</td>
+<td align="center">31</td>
+<td align="center">1F</td>
+<td align="center">US</td>
+<td align="center" class="xianshi">␟</td>
+<td>单元分隔符</td>
+</tr>
+<tr>
+<td>0111&#160;1111</td>
+<td align="center">127</td>
+<td align="center">7F</td>
+<td align="center">DEL</td>
+<td align="center" class="xianshi">␡</td>
+<td>删除</td>
+</tr>
+</tbody>
+</table>
+<h3 class="f14 p8 center pink">ASCII可显示字符</h3>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bx">
+<thead>
+<tr valign="bottom">
+<th>二进制</th>
+<th>十进制</th>
+<th>十六进制</th>
+<th>图形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0010&#160;0000</td>
+<td align="center">32</td>
+<td align="center">20</td>
+<td align="center">（空格）(␠)</td>
+</tr>
+<tr>
+<td>0010&#160;0001</td>
+<td align="center">33</td>
+<td align="center">21</td>
+<td align="center">!</td>
+</tr>
+<tr>
+<td>0010&#160;0010</td>
+<td align="center">34</td>
+<td align="center">22</td>
+<td align="center">"</td>
+</tr>
+<tr>
+<td>0010&#160;0011</td>
+<td align="center">35</td>
+<td align="center">23</td>
+<td align="center">#</td>
+</tr>
+<tr>
+<td>0010&#160;0100</td>
+<td align="center">36</td>
+<td align="center">24</td>
+<td align="center">$</td>
+</tr>
+<tr>
+<td>0010&#160;0101</td>
+<td align="center">37</td>
+<td align="center">25</td>
+<td align="center">&#160;%</td>
+</tr>
+<tr>
+<td>0010&#160;0110</td>
+<td align="center">38</td>
+<td align="center">26</td>
+<td align="center">&amp;</td>
+</tr>
+<tr>
+<td>0010&#160;0111</td>
+<td align="center">39</td>
+<td align="center">27</td>
+<td align="center">'</td>
+</tr>
+<tr>
+<td>0010&#160;1000</td>
+<td align="center">40</td>
+<td align="center">28</td>
+<td align="center">(</td>
+</tr>
+<tr>
+<td>0010&#160;1001</td>
+<td align="center">41</td>
+<td align="center">29</td>
+<td align="center">)</td>
+</tr>
+<tr>
+<td>0010&#160;1010</td>
+<td align="center">42</td>
+<td align="center">2A</td>
+<td align="center">*</td>
+</tr>
+<tr>
+<td>0010&#160;1011</td>
+<td align="center">43</td>
+<td align="center">2B</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td>0010&#160;1100</td>
+<td align="center">44</td>
+<td align="center">2C</td>
+<td align="center">,</td>
+</tr>
+<tr>
+<td>0010&#160;1101</td>
+<td align="center">45</td>
+<td align="center">2D</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>0010&#160;1110</td>
+<td align="center">46</td>
+<td align="center">2E</td>
+<td align="center">.</td>
+</tr>
+<tr>
+<td>0010&#160;1111</td>
+<td align="center">47</td>
+<td align="center">2F</td>
+<td align="center">/</td>
+</tr>
+<tr>
+<td>0011&#160;0000</td>
+<td align="center">48</td>
+<td align="center">30</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>0011&#160;0001</td>
+<td align="center">49</td>
+<td align="center">31</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td>0011&#160;0010</td>
+<td align="center">50</td>
+<td align="center">32</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td>0011&#160;0011</td>
+<td align="center">51</td>
+<td align="center">33</td>
+<td align="center">3</td>
+</tr>
+<tr>
+<td>0011&#160;0100</td>
+<td align="center">52</td>
+<td align="center">34</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td>0011&#160;0101</td>
+<td align="center">53</td>
+<td align="center">35</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>0011&#160;0110</td>
+<td align="center">54</td>
+<td align="center">36</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>0011&#160;0111</td>
+<td align="center">55</td>
+<td align="center">37</td>
+<td align="center">7</td>
+</tr>
+<tr>
+<td>0011&#160;1000</td>
+<td align="center">56</td>
+<td align="center">38</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td>0011&#160;1001</td>
+<td align="center">57</td>
+<td align="center">39</td>
+<td align="center">9</td>
+</tr>
+<tr>
+<td>0011&#160;1010</td>
+<td align="center">58</td>
+<td align="center">3A</td>
+<td align="center">:</td>
+</tr>
+<tr>
+<td>0011&#160;1011</td>
+<td align="center">59</td>
+<td align="center">3B</td>
+<td align="center">;</td>
+</tr>
+<tr>
+<td>0011&#160;1100</td>
+<td align="center">60</td>
+<td align="center">3C</td>
+<td align="center">&lt;</td>
+</tr>
+<tr>
+<td>0011&#160;1101</td>
+<td align="center">61</td>
+<td align="center">3D</td>
+<td align="center">=</td>
+</tr>
+<tr>
+<td>0011&#160;1110</td>
+<td align="center">62</td>
+<td align="center">3E</td>
+<td align="center">&gt;</td>
+</tr>
+<tr>
+<td>0011&#160;1111</td>
+<td align="center">63</td>
+<td align="center">3F</td>
+<td align="center">?</td>
+</tr>
+</table>
+</td>
+<td>&#160;</td>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bx">
+<thead>
+<tr valign="bottom">
+<th>二进制</th>
+<th>十进制</th>
+<th>十六进制</th>
+<th>图形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0100&#160;0000</td>
+<td align="center">64</td>
+<td align="center">40</td>
+<td align="center">@</td>
+</tr>
+<tr>
+<td>0100&#160;0001</td>
+<td align="center">65</td>
+<td align="center">41</td>
+<td align="center">A</td>
+</tr>
+<tr>
+<td>0100&#160;0010</td>
+<td align="center">66</td>
+<td align="center">42</td>
+<td align="center">B</td>
+</tr>
+<tr>
+<td>0100&#160;0011</td>
+<td align="center">67</td>
+<td align="center">43</td>
+<td align="center">C</td>
+</tr>
+<tr>
+<td>0100&#160;0100</td>
+<td align="center">68</td>
+<td align="center">44</td>
+<td align="center">D</td>
+</tr>
+<tr>
+<td>0100&#160;0101</td>
+<td align="center">69</td>
+<td align="center">45</td>
+<td align="center">E</td>
+</tr>
+<tr>
+<td>0100&#160;0110</td>
+<td align="center">70</td>
+<td align="center">46</td>
+<td align="center">F</td>
+</tr>
+<tr>
+<td>0100&#160;0111</td>
+<td align="center">71</td>
+<td align="center">47</td>
+<td align="center">G</td>
+</tr>
+<tr>
+<td>0100&#160;1000</td>
+<td align="center">72</td>
+<td align="center">48</td>
+<td align="center">H</td>
+</tr>
+<tr>
+<td>0100&#160;1001</td>
+<td align="center">73</td>
+<td align="center">49</td>
+<td align="center">I</td>
+</tr>
+<tr>
+<td>0100&#160;1010</td>
+<td align="center">74</td>
+<td align="center">4A</td>
+<td align="center">J</td>
+</tr>
+<tr>
+<td>0100&#160;1011</td>
+<td align="center">75</td>
+<td align="center">4B</td>
+<td align="center">K</td>
+</tr>
+<tr>
+<td>0100&#160;1100</td>
+<td align="center">76</td>
+<td align="center">4C</td>
+<td align="center">L</td>
+</tr>
+<tr>
+<td>0100&#160;1101</td>
+<td align="center">77</td>
+<td align="center">4D</td>
+<td align="center">M</td>
+</tr>
+<tr>
+<td>0100&#160;1110</td>
+<td align="center">78</td>
+<td align="center">4E</td>
+<td align="center">N</td>
+</tr>
+<tr>
+<td>0100&#160;1111</td>
+<td align="center">79</td>
+<td align="center">4F</td>
+<td align="center">O</td>
+</tr>
+<tr>
+<td>0101&#160;0000</td>
+<td align="center">80</td>
+<td align="center">50</td>
+<td align="center">P</td>
+</tr>
+<tr>
+<td>0101&#160;0001</td>
+<td align="center">81</td>
+<td align="center">51</td>
+<td align="center">Q</td>
+</tr>
+<tr>
+<td>0101&#160;0010</td>
+<td align="center">82</td>
+<td align="center">52</td>
+<td align="center">R</td>
+</tr>
+<tr>
+<td>0101&#160;0011</td>
+<td align="center">83</td>
+<td align="center">53</td>
+<td align="center">S</td>
+</tr>
+<tr>
+<td>0101&#160;0100</td>
+<td align="center">84</td>
+<td align="center">54</td>
+<td align="center">T</td>
+</tr>
+<tr>
+<td>0101&#160;0101</td>
+<td align="center">85</td>
+<td align="center">55</td>
+<td align="center">U</td>
+</tr>
+<tr>
+<td>0101&#160;0110</td>
+<td align="center">86</td>
+<td align="center">56</td>
+<td align="center">V</td>
+</tr>
+<tr>
+<td>0101&#160;0111</td>
+<td align="center">87</td>
+<td align="center">57</td>
+<td align="center">W</td>
+</tr>
+<tr>
+<td>0101&#160;1000</td>
+<td align="center">88</td>
+<td align="center">58</td>
+<td align="center">X</td>
+</tr>
+<tr>
+<td>0101&#160;1001</td>
+<td align="center">89</td>
+<td align="center">59</td>
+<td align="center">Y</td>
+</tr>
+<tr>
+<td>0101&#160;1010</td>
+<td align="center">90</td>
+<td align="center">5A</td>
+<td align="center">Z</td>
+</tr>
+<tr>
+<td>0101&#160;1011</td>
+<td align="center">91</td>
+<td align="center">5B</td>
+<td align="center">[</td>
+</tr>
+<tr>
+<td>0101&#160;1100</td>
+<td align="center">92</td>
+<td align="center">5C</td>
+<td align="center">\</td>
+</tr>
+<tr>
+<td>0101&#160;1101</td>
+<td align="center">93</td>
+<td align="center">5D</td>
+<td align="center">]</td>
+</tr>
+<tr>
+<td>0101&#160;1110</td>
+<td align="center">94</td>
+<td align="center">5E</td>
+<td align="center">^</td>
+</tr>
+<tr>
+<td>0101&#160;1111</td>
+<td align="center">95</td>
+<td align="center">5F</td>
+<td align="center">_</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>&#160;</td>
+<td>
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="bx">
+<thead>
+<tr valign="bottom">
+<th>二进制</th>
+<th>十进制</th>
+<th>十六进制</th>
+<th>图形</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0110&#160;0000</td>
+<td align="center">96</td>
+<td align="center">60</td>
+<td align="center">`</td>
+</tr>
+<tr>
+<td>0110&#160;0001</td>
+<td align="center">97</td>
+<td align="center">61</td>
+<td align="center">a</td>
+</tr>
+<tr>
+<td>0110&#160;0010</td>
+<td align="center">98</td>
+<td align="center">62</td>
+<td align="center">b</td>
+</tr>
+<tr>
+<td>0110&#160;0011</td>
+<td align="center">99</td>
+<td align="center">63</td>
+<td align="center">c</td>
+</tr>
+<tr>
+<td>0110&#160;0100</td>
+<td align="center">100</td>
+<td align="center">64</td>
+<td align="center">d</td>
+</tr>
+<tr>
+<td>0110&#160;0101</td>
+<td align="center">101</td>
+<td align="center">65</td>
+<td align="center">e</td>
+</tr>
+<tr>
+<td>0110&#160;0110</td>
+<td align="center">102</td>
+<td align="center">66</td>
+<td align="center">f</td>
+</tr>
+<tr>
+<td>0110&#160;0111</td>
+<td align="center">103</td>
+<td align="center">67</td>
+<td align="center">g</td>
+</tr>
+<tr>
+<td>0110&#160;1000</td>
+<td align="center">104</td>
+<td align="center">68</td>
+<td align="center">h</td>
+</tr>
+<tr>
+<td>0110&#160;1001</td>
+<td align="center">105</td>
+<td align="center">69</td>
+<td align="center">i</td>
+</tr>
+<tr>
+<td>0110&#160;1010</td>
+<td align="center">106</td>
+<td align="center">6A</td>
+<td align="center">j</td>
+</tr>
+<tr>
+<td>0110&#160;1011</td>
+<td align="center">107</td>
+<td align="center">6B</td>
+<td align="center">k</td>
+</tr>
+<tr>
+<td>0110&#160;1100</td>
+<td align="center">108</td>
+<td align="center">6C</td>
+<td align="center">l</td>
+</tr>
+<tr>
+<td>0110&#160;1101</td>
+<td align="center">109</td>
+<td align="center">6D</td>
+<td align="center">m</td>
+</tr>
+<tr>
+<td>0110&#160;1110</td>
+<td align="center">110</td>
+<td align="center">6E</td>
+<td align="center">n</td>
+</tr>
+<tr>
+<td>0110&#160;1111</td>
+<td align="center">111</td>
+<td align="center">6F</td>
+<td align="center">o</td>
+</tr>
+<tr>
+<td>0111&#160;0000</td>
+<td align="center">112</td>
+<td align="center">70</td>
+<td align="center">p</td>
+</tr>
+<tr>
+<td>0111&#160;0001</td>
+<td align="center">113</td>
+<td align="center">71</td>
+<td align="center">q</td>
+</tr>
+<tr>
+<td>0111&#160;0010</td>
+<td align="center">114</td>
+<td align="center">72</td>
+<td align="center">r</td>
+</tr>
+<tr>
+<td>0111&#160;0011</td>
+<td align="center">115</td>
+<td align="center">73</td>
+<td align="center">s</td>
+</tr>
+<tr>
+<td>0111&#160;0100</td>
+<td align="center">116</td>
+<td align="center">74</td>
+<td align="center">t</td>
+</tr>
+<tr>
+<td>0111&#160;0101</td>
+<td align="center">117</td>
+<td align="center">75</td>
+<td align="center">u</td>
+</tr>
+<tr>
+<td>0111&#160;0110</td>
+<td align="center">118</td>
+<td align="center">76</td>
+<td align="center">v</td>
+</tr>
+<tr>
+<td>0111&#160;0111</td>
+<td align="center">119</td>
+<td align="center">77</td>
+<td align="center">w</td>
+</tr>
+<tr>
+<td>0111&#160;1000</td>
+<td align="center">120</td>
+<td align="center">78</td>
+<td align="center">x</td>
+</tr>
+<tr>
+<td>0111&#160;1001</td>
+<td align="center">121</td>
+<td align="center">79</td>
+<td align="center">y</td>
+</tr>
+<tr>
+<td>0111&#160;1010</td>
+<td align="center">122</td>
+<td align="center">7A</td>
+<td align="center">z</td>
+</tr>
+<tr>
+<td>0111&#160;1011</td>
+<td align="center">123</td>
+<td align="center">7B</td>
+<td align="center">{</td>
+</tr>
+<tr>
+<td>0111&#160;1100</td>
+<td align="center">124</td>
+<td align="center">7C</td>
+<td align="center">|</td>
+</tr>
+<tr>
+<td>0111&#160;1101</td>
+<td align="center">125</td>
+<td align="center">7D</td>
+<td align="center">}</td>
+</tr>
+<tr>
+<td>0111&#160;1110</td>
+<td align="center">126</td>
+<td align="center">7E</td>
+<td align="center">~</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</table>    
+</body>
+</html>

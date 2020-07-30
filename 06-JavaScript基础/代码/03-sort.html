@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // sort 
+    // var arr = [25, 10, 108, 18];
+    // 默认情况下的sort是对字符编码 从小到大排序
+    // arr.sort();
+    // console.log(arr);
+    // ASCII
+    // 字符编码    a  >  97
+    // 
+    // function compare(a, b) {
+    //   return a - b;
+    // }
+
+    // arr.sort(compare);
+    // console.log(arr);
+    
+
+    // arr.sort(function (a, b) {
+    //   return b - a;
+    // })
+
+    // console.log(arr);
+    // 
+    // 
+    var arr = ['abc', 'ab', 'a', 'abcdef', 'xy'];
+    arr.sort(function (a, b) {
+      return a.length - b.length;
+    });
+    console.log(arr);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

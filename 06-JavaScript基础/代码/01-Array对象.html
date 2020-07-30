@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 如何创建数组对象
+    // 1 数组字面量  []
+    // var array = []; // 空数组
+    // var numbers = [1, 5, 1];
+    // 
+    // 2 数组的构造函数Array
+    // var array = new Array();   // 空数组
+    // var numbers = new Array(4, 1, 6);
+    // console.log(numbers);
+    // 
+    // 获取数组长度
+    // console.log(numbers.length);
+    // 
+    // 
+    // 
+    // 如何判断一个变量是否是数组对象
+    function fn(arr) {
+      // 判断参数arr 是否是数组对象
+      // instanceof 
+      // console.log(arr instanceof Array);
+      // 
+      // !arr instanceof Array   
+      // false instanceof Array
+      // 方式1
+      // if (!(arr instanceof Array)) {
+      //   console.error('参数err 不是数组对象');
+      //   return;
+      // }
+      // 
+      // 
+      // 方式2  Array.isArray() 浏览器兼容性问题  HTML5
+      // console.log(Array.isArray(arr));
+      // if (!Array.isArray(arr)) {
+      //   console.error('参数err 不是数组对象');
+      //   return;
+      // }
+
+      console.log('正常执行');
+    }
+
+    var d = 1;
+    fn(d);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

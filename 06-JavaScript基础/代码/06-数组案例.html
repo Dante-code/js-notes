@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 将一个字符串数组输出为|分割的形式，比如“刘备|张飞|关羽”。使用两种方式实现
+    // var arr = ['刘备', '张飞', '关羽'];
+
+    // // arr.toString();  ->  刘备,张飞,关羽
+    // console.log(arr.join('|'));
+
+
+    // 将一个字符串数组的元素的顺序进行反转。["a", "b", "c", "d"] -> [ "d","c","b","a"]。使用两种种方式实现。提示：第i个和第length-i-1个进行交换
+    // 
+    // var arr = ["a", "b", "c", "d"];
+    // arr.reverse();
+    // console.log(arr);
+
+    // 工资的数组[1500, 1200, 2000, 2100, 1800],把工资超过2000的删除
+    // var arr = [1500, 1200, 2000, 2100, 1800];
+
+    // var newArray = arr.filter(function (item) {
+    //   // item就是数组中的每一个元素
+    //   return item < 2000;
+    // })
+    // console.log(newArray);
+
+    // ['c', 'a', 'z', 'a', 'x', 'a']找到数组中每一个a出现的位置
+    // var arr = ['c', 'a', 'z', 'a', 'x', 'a'];
+
+    // 从前往后找元素
+    // console.log(arr.indexOf('a'));
+    // // 从后往前找
+    // console.log(arr.lastIndexOf('a'));
+
+    // indexOf的第二个参数 设置indexOf查找的开始位置
+    // console.log(arr.indexOf('a', 2));
+    // 如果没有找到元素 indexOf  会返回-1
+    // 
+    // while   do...while
+    // var index = -1;
+    // do {
+    //   index = arr.indexOf('a', index + 1);
+
+    //   if (index !== -1) {
+    //     console.log(index);
+    //   }
+    // } while (index !== -1);
+    
+
+
+
+    // 编写一个方法去掉一个数组的重复元素['c', 'a', 'z', 'a', 'x', 'a']
+    // ['c', 'a', 'z', 'a', 'x', 'a']  -> ['c', 'a', 'z', 'x']
+    // 
+    // 1 如何获取数组中每一个元素出现的次数
+    // 1.1 遍历数组中的每一个元素
+    // { c: 1
+    // a: 1 + 1 + 1
+    // z: 1
+    // x: 1 }
+    // 1.2 创建一个对象，把数组的元素作为对象的属性，并记录次数
+    // 
+    // var o = {};
+    // console.log(o['c']);  // 我们访问对象中没有的属性，返回值是undefined
+    function clear(arr) {
+      // 1 如何获取数组中每一个元素出现的次数
+      var o = {}; // 记录数组中元素出现的次数
+      for (var i = 0; i < arr.length; i++) {
+        var item = arr[i]; // 数组中的每一个元素
+        // o[item] = 1;
+        // 判断o对象是否有当前遍历到的属性
+        if (o[item]) {
+          // 如果o[item] 存在，说明次数不为1
+          o[item]++;
+        } else {
+          // 如果o[item] 不存在，说明是第一次出现
+          o[item] = 1;
+        }
+      }
+      // console.log(o);
+
+      // 2 生成一个新的数组，存储不重复的元素
+      var newArray = [];
+      // 遍历对象o中的所有属性
+      for (var key in o) {
+        // 判断o对象中当前属性的值是否为 1  如果为1 说明不重复直接放到新数组中
+        if (o[key] === 1) {
+          newArray.push(key);
+        } else {
+          // o对象中当前属性 次数不为1 ，说明有重复的，如果有重复的话，只存储一次
+          // 判断当前的newArray数组中是否已经有该元素  
+          if (newArray.indexOf(key) === -1) {
+            newArray.push(key);
+          }
+        }
+      }
+      return newArray;
+    } 
+
+    var array = ['c', 'a', 'z', 'a', 'x', 'a'];
+    var newArray = clear(array);
+    console.log(newArray);
+    
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
