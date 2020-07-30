@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: rgb(100, 100, 100);
+    }
+  </style>
+  <script>
+    // - 求10-20之间的随机数  [10, 20]   整数
+    // Math.random()  ->  [0, 1)  小数
+    // Math.random() * 20   ->   [0, 20)  包含小数部分
+    // Math.random() * (20 - 10)  -> [0, 10)  包含小数部分
+    // Math.random() * (20 - 10) +  10 -> [10, 20)  包含小数部分
+
+
+    // Math.floor(Math.random() * (max - min + 1) + min);
+    // Math.floor(Math.random() * (20 - 10 + 1) + 10);
+    // Math.floor(Math.random() * 11 + 10);  -> Math.floor([0, 11) + 10) ->  Math.floor([10, 21)) -> ->  Math.floor([10, 20])  -> [10, 20] 整数
+    
+    // function random(min, max) {
+    //   return Math.floor(Math.random() * (max - min + 1) + min);
+    // }
+
+    // console.log(random(10, 20));
+
+
+
+
+
+
+    // - 随机生成颜色RGB   [0, 255] 整数
+    // rgb(100, 100, 100)
+    // function random(min, max) {
+    //   return Math.floor(Math.random() * (max - min + 1) + min);
+    // }
+
+    // function randomRGB(min, max) {
+    //   var color1 = random(min, max);
+    //   var color2 = random(min, max);
+    //   var color3 = random(min, max);
+
+    //   return 'rgb(' + color1 + ', ' + color2 + ', ' + color3 + ')';
+    // }
+
+    // console.log(randomRGB(0, 255))
+    
+
+
+    // - 模拟实现max()/min()
+   // console.log( Math.min(23, 1, 4, 2 ,10));
+   // Math.max()
+   // function max() {
+   //   // arguments
+   //   var max = arguments[0];
+   //   for (var i = 1; i < arguments.length; i++) {
+   //     if (max < arguments[i]) {
+   //       max = arguments[i];
+   //     }
+   //   }
+   //   return max;
+   // }
+
+   // function min() {
+   //   // arguments
+   //   var min = arguments[0];
+   //   for (var i = 1; i < arguments.length; i++) {
+   //     if (min > arguments[i]) {
+   //       min = arguments[i];
+   //     }
+   //   }
+   //   return min;
+   // }
+
+   // console.log(min(5, 1, 100, 23));
+   // 
+   var MyMath = {
+    max: function () {
+     var max = arguments[0];
+     for (var i = 1; i < arguments.length; i++) {
+       if (max < arguments[i]) {
+         max = arguments[i];
+       }
+     }
+     return max;
+    },
+    min: function () {
+      var min = arguments[0];
+       for (var i = 1; i < arguments.length; i++) {
+         if (min > arguments[i]) {
+           min = arguments[i];
+         }
+       }
+       return min;
+    }
+   };
+
+
+   console.log(MyMath.max(10, 1, 100, 20));
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

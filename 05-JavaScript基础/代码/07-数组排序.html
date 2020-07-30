@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 数组也是复杂类型
+
+    // 对数组排序，从小到大  -- 冒泡排序
+    function sort(array) {
+      // 外层循环 控制趟数
+      for (var i = 0; i < array.length - 1; i++) {
+        // 假设排好序了
+        var isSort = true;
+        // 内层循环 控制比较的次数
+        for (var j = 0; j < array.length - 1 - i; j++) {
+          if (array[j] > array[j + 1]) {
+            isSort = false;
+            // 交换位置
+            var tmp = array[j];
+            array[j] = array[j + 1];
+            array[j + 1] = tmp;
+          }
+        }
+        // 判断是否排好了
+        if (isSort) {
+          break;
+        }
+      }
+      // return array;
+    } 
+
+    var array = [34, 12, 88, 20, 30];
+    var r = sort(array);
+    console.log(r);
+    console.log(array);
+
+
+
+    // var array = [34, 12, 88, 20, 30];
+    // function fn(arr) {
+    //   arr[0] = -1;
+    // }
+    // fn(array);
+    // console.log(array);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

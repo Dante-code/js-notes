@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // 复杂类型在内存中如何存储
+    // Object  所有的对象都是基于Object 
+    
+    function Person(name, age) {
+      this.name = name;
+      this.age = age;
+      this.sayHi = function () {
+        console.log(this.name + ': hello');
+      }
+    }
+
+    var p1 = new Person('zs', 18);
+    var p2 = p1;
+
+    p1.name = 'ls';
+    console.log(p2.name);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script>
+    // Math对象和Date对象的区别
+    // 
+    // Math 不是一个构造函数，里面提供是静态成员
+    // var MyMath = {
+    //   PI: 3.14,
+    //   max: function () {
+    //   }
+    // }
+    // 静态成员
+    // MyMath.PI
+    // MyMath.max();
+    // 
+    // 
+    // Date 是一个构造函数，首先要通过new Date() 来创建日期实例(对象)，实例成员
+    // var d = new Date();
+
+    // console.log(d);
+
+    // GMT 格林威治时间   世界标准时间
+    // GMT+0800 (中国标准时间)
+    // 
+    // 距离1970-1-1相差的毫秒数
+    // console.log(d.valueOf());
+    // 
+    // 
+    // 日期构造函数 Date()
+    // 1 空构造函数   获取的是当前时间对象
+    // var d = new Date();  
+    // console.log(d);
+    // console.log(d.valueOf());
+    // 2 构造函数中传入 毫秒值
+    // var d = new Date(1502088177998);
+    // console.log(d);
+    // 
+    // 3 可以传入日期形式的字符串
+    // var d = new Date('1988-8-8 8:8:8');
+    // console.log(d);
+    // console.log(d.valueOf());
+
+    // 
+    // 4 可以传入数字
+    // var d = new Date(1928, 8, 8);
+    // console.log(d);
+    // console.log(d.valueOf());
+    // 
+    // 
+    // 
+    // 如何获取日期对象的毫秒值
+    // var d = new Date();
+    // // 获取日期对象的毫秒值  不用我们调用
+    // // console.log(d.valueOf());
+    // // 和valueOf的作用是一样的
+    // console.log(d.getTime());
+
+    // 获取当前时间的毫秒值    静态成员
+    // var num = Date.now();   // 浏览器兼容问题  HTML5
+    // console.log(num);
+
+    // + 在这里是取正
+    // var num = Number( new Date());
+    var num = + new Date();
+    console.log(num);
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
